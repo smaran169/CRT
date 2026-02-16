@@ -1,0 +1,33 @@
+#debbing finding and fixing an error
+#types of errors missing of colon ,missing of intendation
+#2.runtime error division by zero
+#3.logical error missing of logics
+ #debugging techniques
+ #1.print()
+ #2)try expet
+ #3)using pb
+#try:
+    a = int(input("Enter a number: "))   # only one input() needed
+    print(10 / a)
+#except ZeroDivisionError:
+  #  print("Cannot divide by zero.")
+#except ValueError:
+   # print("Invalid input.")
+# pdb commands:
+#  n--> to execute the output in next line
+#p variablee-->to get the value of a variable
+#l --> list nearby code
+#c -->continue the execution
+#s --->to start function
+#r-->return fro the function
+#h-->help
+#q-->quit the execution
+'''
+import pdb
+def add(a,b):
+    pdb.set_trace()
+    return a+b
+a= int(input("enter first number:"))
+b=int(input())
+print(add(a,b))
+'''
